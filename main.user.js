@@ -28,11 +28,11 @@
             return
         }
         const id = wrap.id.replace('tk_children_', '')
-       const parentTopic = document.getElementById(id)
-       if (!parentTopic) {
+        const parentTopic = document.getElementById(id)
+        if (!parentTopic || !parentTopic.classList.contains('tk_label')) {
            return null
-       }
-        return parentTopic.classList.contains('root_child') ? null : parentTopic
+        }
+        return parentTopic
     }
     document.addEventListener('click', function(e) {
         const clicked = e.target
