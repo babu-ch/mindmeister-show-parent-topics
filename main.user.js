@@ -23,6 +23,9 @@
     document.body.append(infoEl)
 
     function getParentTopic(el) {
+        if (!el) {
+            return
+        }
         const wrap = el.closest('.tk_children')
         if (!wrap) {
             return
