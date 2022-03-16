@@ -34,15 +34,17 @@
         }
         return parentTopic
     }
-    document.addEventListener('click', function(e) {
-        const clicked = e.target
-        infoEl.innerText = ''
-        if (!clicked.classList.contains('tk_title')) {
-            return
+    function getClickedTopic(el) {
+        if (el.classList.contains('tk_label')) {
+            return el.querySelector('.tk_title')
         }
-
+        if (el.classList.contains('tk_title')) {
+            return el
+        }
+    }
+    document.addEventListener('click', function(e) {
         const topicTexts = []
-        let topic = clicked
+        let topic = getClickedTopic(e.target)
         while( topic = getParentTopic(topic)) {
             topicTexts.unshift(topic.innerText)
         }
