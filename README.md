@@ -9,7 +9,10 @@ All parent topics of the selected topic are displayed in the upper left
 
 1. install tampermonkey
 
+https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=ja
+
 2. access or dl
+
 https://github.com/babu-ch/mindmeister-show-parent-topics/raw/main/main.user.js
 
 install!
