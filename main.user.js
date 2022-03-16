@@ -7,6 +7,7 @@
 // @match        https://www.mindmeister.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=mindmeister.com
 // @grant        none
+// @updateURL    https://github.com/babu-ch/mindmeister-show-parent-topics/raw/main/main.user.js
 // ==/UserScript==
 
 (function() {
